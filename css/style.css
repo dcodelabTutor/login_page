@@ -42,6 +42,50 @@ a {
   height: 100%;
   float: left;
   background: #195158;
+  position: relative;
+  overflow: hidden;
+}
+.login .inner .con .loginVisual .logo {
+  width: 40%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.login .inner .con .loginVisual .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.login .inner .con .loginVisual .bottomVisual {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.login .inner .con .loginVisual .bottomVisual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.login .inner .con .loginVisual .reflection {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -20%;
+}
+.login .inner .con .loginVisual .reflection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(4px) invert(30%);
+}
+.login .inner .con .loginVisual .sun {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  margin-top: -100px;
+  margin-left: -100px;
 }
 .login .inner .con .loginVisual {
   width: 50%;
