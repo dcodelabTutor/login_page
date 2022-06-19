@@ -107,7 +107,41 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -20%);
+}
+.login .inner .con .loginInfo .loginBox .inputBox {
+  position: relative;
+}
+.login .inner .con .loginInfo .loginBox .inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #093d3d;
+  background: #fff;
+  border-radius: 5px;
+  color: #195158;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "orbitron";
+  margin-bottom: 10px;
+}
+.login .inner .con .loginInfo .loginBox .inputBox input:valid ~ span, .login .inner .con .loginInfo .loginBox .inputBox input:focus ~ span {
+  color: #454d4e;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #fff;
+  border-left: 1px solid #093d3d;
+  border-right: 1px solid #093d3d;
+}
+.login .inner .con .loginInfo .loginBox .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
