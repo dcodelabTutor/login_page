@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #093d3d, #454d4e);
+  position: relative;
+  overflow: hidden;
+  padding-top: 10vh;
+}
+.login .inner {
+  width: 1180px;
+  height: 80vh;
+  background: #eee;
+  margin: 0 auto;
+}
+.login .inner .con {
+  width: 100%;
+  height: 100%;
+}
+.login .inner .con::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.login .inner .con .loginVisual {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: #195158;
+}
+.login .inner .con .loginVisual {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+/*# sourceMappingURL=style.css.map */
