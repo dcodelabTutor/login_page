@@ -15,133 +15,143 @@ a {
   text-decoration: none;
 }
 
-.login {
+#utilLogin {
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(45deg, #093d3d, #454d4e);
-  position: relative;
-  overflow: hidden;
-  padding-top: 10vh;
+  height: 100%;
+  margin-top: 50px;
+  background: rgba(229, 241, 248, 0.4);
 }
-.login .inner {
+#utilLogin .inner {
   width: 1180px;
-  height: 80vh;
-  background: #eee;
+  height: 1000px;
   margin: 0 auto;
-}
-.login .inner .con {
-  width: 100%;
-  height: 100%;
-}
-.login .inner .con::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.login .inner .con .loginVisual {
-  width: 50%;
-  height: 100%;
-  float: left;
-  background: #195158;
+  margin-top: 70px;
   position: relative;
+  padding: 50px 0;
   overflow: hidden;
+  padding-top: 15vh;
 }
-.login .inner .con .loginVisual .logo {
-  width: 40%;
+#utilLogin .inner .loginTojoin {
+  width: 80%;
+  height: 380px;
+  background: #222;
+  border-radius: 10px;
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 23%;
+  left: 10%;
+  text-align: right;
+  padding: 50px;
 }
-.login .inner .con .loginVisual .logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.login .inner .con .loginVisual .bottomVisual {
-  width: 100%;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
-.login .inner .con .loginVisual .bottomVisual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.login .inner .con .loginVisual .reflection {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: -20%;
-}
-.login .inner .con .loginVisual .reflection img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: blur(4px) invert(30%);
-}
-.login .inner .con .loginVisual .sun {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  margin-top: -100px;
-  margin-left: -100px;
-}
-.login .inner .con .loginInfo {
-  width: 50%;
-  height: 100%;
-  float: left;
-  position: relative;
-}
-.login .inner .con .loginInfo h1 {
-  width: 100%;
-  font: 100px/1 "Orbitron";
-  text-align: center;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -80%);
-}
-.login .inner .con .loginInfo .loginBox {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -20%);
-}
-.login .inner .con .loginInfo .loginBox .inputBox {
-  position: relative;
-}
-.login .inner .con .loginInfo .loginBox .inputBox input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #093d3d;
-  background: #fff;
-  border-radius: 5px;
-  color: #195158;
-  font-size: 1em;
-  font-weight: bold;
-  font-family: "orbitron";
+#utilLogin .inner .loginTojoin h1 {
+  font: bold 18px/1 "arial";
+  color: #fff;
   margin-bottom: 10px;
+  position: absolute;
+  top: 30%;
+  right: 7%;
+  letter-spacing: 1px;
 }
-.login .inner .con .loginInfo .loginBox .inputBox input:valid ~ span, .login .inner .con .loginInfo .loginBox .inputBox input:focus ~ span {
-  color: #454d4e;
+#utilLogin .inner .loginTojoin p {
+  font: 15px/1.1 "arial";
+  color: #fff;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 40%;
+  right: 4%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+#utilLogin .inner .loginTojoin a {
+  display: block;
+  position: absolute;
+  bottom: 27%;
+  right: 14%;
+  font: 22px/1.5 "arial";
+  color: #fff;
+  border: 2px solid #fff;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  transform: 0.5s;
+  letter-spacing: 2px;
+}
+#utilLogin .inner .loginTojoin a:hover {
+  color: #b3d7e8;
+  background: #fff;
+}
+#utilLogin .inner .loginInfo {
+  width: 40%;
+  height: 500px;
+  background: #aaa;
+  border-radius: 30px;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  text-align: center;
+}
+#utilLogin .inner .loginInfo h1 {
+  font: bold 25px/1 "arial";
+  color: #fff;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 20%;
+  left: 16%;
+  letter-spacing: 1px;
+}
+#utilLogin .inner .loginInfo .loginBox {
+  position: absolute;
+  top: 35%;
+  left: 21%;
+}
+#utilLogin .inner .loginInfo .inputBox input {
+  width: 270px;
+  height: 40px;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #b3d7e8;
+  color: #021e2b;
+  font-family: "arial";
+}
+#utilLogin .inner .loginInfo .inputBox input:valid ~ span, #utilLogin .inner .loginInfo .inputBox input:focus ~ span {
+  color: #4663c2;
+  font-family: "Kanit";
   transform: translateX(10px) translateY(-7px);
   font-size: 0.65em;
+  font-weight: bold;
   padding: 0 10px;
   background: #fff;
-  border-left: 1px solid #093d3d;
-  border-right: 1px solid #093d3d;
+  border-left: 2px solid #b3d7e8;
+  border-right: 2px solid #b3d7e8;
+  letter-spacing: 1px;
 }
-.login .inner .con .loginInfo .loginBox .inputBox span {
+#utilLogin .inner .loginInfo .inputBox span {
   position: absolute;
-  left: 0;
+  left: 0px;
   padding: 10px;
   pointer-events: none;
   font-size: 1em;
-  color: #000;
+  font-family: "Kanit";
+  color: #666;
   text-transform: uppercase;
   transition: 0.5s;
+}
+#utilLogin .inner .loginInfo a {
+  display: block;
+  position: absolute;
+  top: 150px;
+  left: 16%;
+  font: 29px/1.7 "Kanit";
+  color: #fff;
+  background: #333;
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  transform: 0.5s;
+  letter-spacing: 2px;
+}
+#utilLogin .inner .loginInfo a:hover {
+  color: #fff;
+  background: #eee4b5;
 }
 
 /*# sourceMappingURL=style.css.map */
