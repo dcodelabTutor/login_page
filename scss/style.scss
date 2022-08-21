@@ -111,6 +111,8 @@ a {
 					border: 1px solid rgb(179, 215, 232);
 					color: rgb(2, 30, 43);
 					font-family: 'arial';
+					//선택자 ~ 란 +와 달리 이어져있는 모든 태그를 포함하는것.
+					//지금여기에서는 값을 넣으려고 포인터를 클릭한 순간(focus가 들어간순간)부터 값을 적는동안과 그리고 span까지 3가지를 포함한것이다.
 					&:valid ~ span,
 					&:focus ~ span {
 						color: rgb(70, 99, 194);
